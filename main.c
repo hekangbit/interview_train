@@ -4,6 +4,19 @@
 #include <string.h>
 #include <stdlib.h>
 
+/*
+example
+raw: "abcdefghi"
+row: 4
+ouput: agbfhceid
+
+from left to right, from top to bottom
+a     g
+b   f h
+c e   i
+d
+
+*/
 int str_reorder(char* praw, char* pout, int k)
 {
         if(praw == NULL || pout == NULL)
