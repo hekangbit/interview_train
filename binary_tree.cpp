@@ -21,10 +21,16 @@ public:
 		left = l;
 		right = r;
 		val = v;
-	};
+	}
 	TreeNode() :
-		parent(NULL), left(NULL), right(NULL){};
+		parent(NULL), left(NULL), right(NULL){}
+	TreeNode(T v);
 };
+
+template<typename T>
+TreeNode<T>::TreeNode(T v): val(v)
+{
+}
 
 void preOrderTravelsal(TreeNode<int>* root)
 {
